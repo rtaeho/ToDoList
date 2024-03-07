@@ -1,6 +1,7 @@
 package Alom.ToDoList.domain;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -15,6 +16,7 @@ public class Member {
     private String password;
     private String nickname;
 
+    @Builder
     public Member(String email, String password, String nickname) {
         this.email = email;
         this.password = password;

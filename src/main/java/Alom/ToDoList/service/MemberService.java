@@ -14,7 +14,6 @@ public class MemberService {
     public Member saveMember(Member member){
         validateDuplicateMember(member);
         return memberRepository.save(member);
-
     }
 
     private void validateDuplicateMember(Member member) {
