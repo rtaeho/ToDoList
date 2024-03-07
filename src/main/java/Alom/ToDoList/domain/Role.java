@@ -1,2 +1,4 @@
-package Alom.ToDoList.domain;public class Role {
+package Alom.ToDoList.domain;
+public enum Role {
+    USER, ADMIN
 }
